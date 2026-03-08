@@ -19,7 +19,7 @@ jobs:
       - name: Run style check
         run: npm run format:check
       - name: Run lint check
-        run: npm run lint
+        run: npm run lint -- --max-warnings=0
 
   test:
     name: Tests
