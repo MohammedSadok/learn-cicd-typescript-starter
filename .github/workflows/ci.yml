@@ -7,7 +7,6 @@ jobs:
   test:
     name: Tests
     runs-on: ubuntu-latest
-
     steps:
       - name: Check out code
         uses: actions/checkout@v4
@@ -17,5 +16,5 @@ jobs:
         with:
           node-version: "22"
 
-      - name: Force Failure
-        run: (exit 1)
+      - name: Check Node.js version
+        run: node --version
